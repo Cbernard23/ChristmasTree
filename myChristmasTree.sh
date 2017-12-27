@@ -27,5 +27,14 @@ tput sgr0; tput setaf 3
 for ((i=1; i<=2; i++))
 {
     tput cup $((line++)) $co
-    echo 'mWm'
+    echo 'lOl'
 }
+
+new_year=$(date +'%Y')
+let new_year++
+tput setaf 1; tput bold
+
+tput cup $line $((co - 6)); echo MERRY CHRISTMAS
+tput cup $((line + 1)) $((co - 12)); echo  And let $new_year be even better!
+tput setaf 4
+tput cup $((line + 3)) $((co - 6)); echo By Chris Bernard
