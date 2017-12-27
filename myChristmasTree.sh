@@ -10,10 +10,10 @@ color=0
 tput setaf 2; tput bold #Set color and new characters bold
 
 #Tree
-for ((i=1; i<20; i+=2))
+for ((i=0; i<19; i+=2))
 {
 	tput cup $line $col
-	for ((j=1; j<=i; j++))
+	for ((j=0; j<=i; j++))
 	{
 		echo -n \*
 	}
